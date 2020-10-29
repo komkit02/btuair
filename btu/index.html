@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style type="text/css">
+<!--
+body {
+
+
+}
+-->
+</style></head>
+<title>Bootstrap Example</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<body>
+
+    <form action="process.php" method="post">
+<table width="400" border="0" align="center">
+<tr>
+      <td colspan="2">
+      <div align="center"><strong>คำนวณ BTU </strong></div></td>
+  </tr>
+    <tr>
+
+      <td width="171"><div align="right">ความกว้าง: </div></td>
+      <td width="212"><input type="number" name="width" placeholder="ความกว้าง" size="20" maxlength="100" />เมตร</td>
+  </tr>
+    <tr>
+      <td><div align="right">ความยาว: </div></td>
+      <td><input type="number" name="length" placeholder="ความยาว" size="20" maxlength="100" />|เมตร</td>
+    </tr>
+    <tr>
+      <td><div align="right">ความสูง: </div></td>
+      <td><input type="number" name="height" placeholder="ความสูง" size="20" maxlength="100" />|เมตร</td>
+    </tr>
+
+
+    <tr>
+      <td><div align="right">เลือกขนาดห้อง:</div></td>
+      <td>
+    <select name="tx4" onchange="showUser(this.value)">
+        <option selected>เลือก</option>
+        <option value="750" >สำหรับห้องนอนปกติ *ไม่โดดแดด</option>
+        <option value="800" >สำหรับห้องนอนปกติ *โดดแดด</option>
+        <option value="850"> สำหรับห้องทำงาน *ไม่โดดแดด</option>
+        <option value="900" >สำหรับห้องทำงาน *โดดแดด</option>
+        <option value="950" >สำหรับร้านอาหาร ร้านทำผม มินิมาร์ท ร้านค้า สำนักงาน *ไม่โดดแดด</option>
+        <option value="1,000" >สำหรับร้านอาหาร ร้านทำผม มินิมาร์ท ร้านค้า สำนักงาน *โดดแดด</option>
+        </select>|เมตร</td>
+
+    </tr>
+    <tr>
+      <td colspan="2"> <div align="center"><input type="submit" value="คำนวณ" /></div></td>
+    </tr>
+
+
+</table>
+ </form>
+
+<div align="center"></div>
+</body>
+</html>
